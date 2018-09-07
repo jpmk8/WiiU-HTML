@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link  rel="stylesheet" href="css/estilo.css"/>
+<title>Hombrew Nintendo WiiU</title>
+</head>
+
+<body>
+    <div id="msg" onClick="this.style.display = 'none'"></div>
+    <script>
+    if(/NintendoBrowser\/4\.3\.1/.test(navigator.userAgent) || /NintendoBrowser\/4\.3\.0/.test(navigator.userAgent))
+        location.href='551.htm';
+    else if(/NintendoBrowser\/4\.3\.2/.test(navigator.userAgent))
+        location.href='552.htm';
+    else{
+        var elm = document.getElementById('msg');          
+        elm.innerHTML = 'El Homebrew Launcher para Nintendo WiiU (5.5.X) no funciona en: '+ navigator.userAgent;
+        elm.style.display = 'block';
+    }
+    </script>
+
+</body>
+</html>

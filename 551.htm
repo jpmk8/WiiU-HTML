@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link  rel="stylesheet" href="css/estilo.css"/>
+<title>Homebrew Launcher - 5.5.1</title>
+</head>
+
+<body>
+<center id="panel"></center>
+<script>
+    var elm = document.getElementById('panel');
+    var apps = 'cfwbooter/cfwboot.elf|homebrew_launcher/homebrew_launcher.elf'.split('|');
+    apps.forEach(function (a){
+        elm.innerHTML += '<div class="app" style="background-image:url(image/'+a.split('/')[0]+'.jpg);" onClick="location.href=\'payload/'+a.split('/')[0]+'.mp4\'; "></div><br>';
+    });
+</script>
+<div class="mario"></div>
+<div class="blk"></div>
+
+</body>
+</html>

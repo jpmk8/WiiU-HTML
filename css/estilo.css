@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+body{ 
+    background-color:hsla(189,75%,67%,1.00);
+    font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size:30px;
+    font-weight:bold;
+    color:#575757;
+    text-align:center;
+    margin:0px;
+}
+.app{ 
+	width:255px;
+	height:95px;
+}
+.bt{ 
+	width:70px;
+	height:70px;
+    text-align:center;
+	background-image:url(../image/bt.jpg);
+    padding:15px;
+}
+.app, .bt, #msg{
+    background-repeat:no-repeat;
+	display:inline-table;
+    margin:5px;
+    position: relative;
+	-webkit-box-shadow: 0px 3px 4.7px 0.3px rgba(0, 0, 0, 0.24);
+	transition: box-shadow 0.2s ease-in-out;
+
+    border-radius: 18px;
+}
+.bt div{
+    height:70px;
+    width:70px;
+    background-repeat:no-repeat;
+}
+.bt:hover, .app:hover,#msg:hover{
+	cursor:pointer;
+    -webkit-box-shadow: 0px 39px 56.4px 3.6px rgba(0, 0, 0, 0.44);
+	transition: box-shadow 0.2s ease-in-out;
+}
+#info, #panel div {
+    background:hsla(0,0%,100%,0.80);
+}
+#info{    
+    -webkit-box-shadow: 0px 39px 100px 3.6px rgba(0,93,168,0.70);
+}
+#msg{
+    background-color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mario{
+    background-image:url(../image/mario2.gif);
+    height:128px;
+    width:128px;
+    position: relative;
+    -webkit-animation:caminar 10s linear infinite;
+}
+.blk{
+    background-image:url(../image/blk.jpg);
+    height:256px;
+    width:100%;
+    left:-10%;
+}
+@-webkit-keyframes caminar {
+    0% { left:-20%;-webkit-transform: scaleX(1);}
+    48% { left:103%;-webkit-transform: scaleX(1);}
+    50% { left:103%;-webkit-transform: scaleX(-1);}
+    99% { left:-20%;-webkit-transform: scaleX(-1);}
+    100% { left:-20%;-webkit-transform: scaleX(1);}
+}
