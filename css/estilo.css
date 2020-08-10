@@ -19,7 +19,7 @@ body{
     text-align:center;
     background-image:url(../image/bt.jpg);
     padding:15px;
-    transform: translate(-50%, -80%);
+    transform: translate(-50%, 50%);
 }
 .app, .bt, #msg{
     background-repeat:no-repeat;
