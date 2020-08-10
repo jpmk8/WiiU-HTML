@@ -14,11 +14,12 @@ body{
 	height:95px;
 }
 .bt{ 
-	width:70px;
-	height:70px;
+    width:70px;
+    height:70px;
     text-align:center;
-	background-image:url(../image/bt.jpg);
+    background-image:url(../image/bt.jpg);
     padding:15px;
+    transform: translate(-50%, -80%);
 }
 .app, .bt, #msg{
     background-repeat:no-repeat;
@@ -51,7 +52,7 @@ body{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 50%);
 }
 
 .mario{
